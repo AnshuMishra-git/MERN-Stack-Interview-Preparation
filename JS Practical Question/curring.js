@@ -9,5 +9,5 @@ function outer(a) {
 }
 
 const data = outer(5)(6)(17);
-
+// 28
 console.log("Data- >", data);
