@@ -15,6 +15,12 @@ const testingApplyFun = function (first, second, symbol = "%") {
 };
 
 testingApplyFun.call(testCallMethod, "1", "2"); // Need to Pass Argument Directly
+// O/p => I am Testing Call  with Arg of 1 , 2 & %
+
 testingApplyFun.apply(testApplyMethod, ["1", "2", "#"]); // Will Pass Argument In Array No Need to Acces with Index , Value will Automatically Assign
+
+// O/p => I am Testing Apply  with Arg of 1 , 2 & #
+
 const res = testingApplyFun.bind(testBindMethod, "1", "2", "@"); // Same Like Call but it will return Copy of Function Which Need to Call Furthure
 res();
+// O/p => I am Testing Bind  with Arg of 1 , 2 & @
